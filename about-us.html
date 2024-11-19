@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC Statesman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', 
+      theme: {
+        extend: {},
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Public Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 w-full">
+  <!-- Header -->
+  <header class="flex items-center justify-center bg-blue-900 text-white">
+    <div class="container flex items-center justify-between py-8 max-w-[90%]">
+      <div>
+        <a href="#">
+          <img src="assets/images/logo.svg" alt="SC Statesman Logo" class="w-32 h-auto">
+        </a>
+      </div>
+      <nav class="flex items-center space-x-6 text-sm">
+        <a href="#" class="hover:text-gray-300">READ</a>
+        <a href="#" class="hover:text-gray-300">LISTEN</a>
+        <a href="#" class="hover:text-gray-300">WATCH</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-gray-300 hover:text-white text-sm">Subscribe</a>
+        <a href="#">
+          <img src="assets/icons/search-icon.svg" alt="Search Icon" class="w-5 h-auto">
+        </a>
+        <!-- Dark Mode Toggle -->
+        <div id="theme-toggle" class="relative flex items-center w-10 h-6 bg-[#4864C0] dark:bg-black rounded-full cursor-pointer">
+          <!-- Toggle Thumb -->
+          <div id="toggle-thumb" class="absolute w-6 h-6 bg-white rounded-full shadow-md flex items-center justify-center transform transition-transform duration-300 ">
+            <!-- Icons inside the thumb -->
+            <img id="toggle-icon" src="assets/icons/day-icon.svg" alt="Day Icon" class="w-4 h-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="h-[3rem] w-full flex items-center justify-center">
+    <div class="w-[90%]">
+        <nav class="flex items-center space-x-6 text-sm gap-6 color-[#1B3664] font-medium">
+            <a href="#" class="hover:text-gray-300">STATE</a>
+            <a href="#" class="hover:text-gray-300">LOCAL</a>
+            <a href="#" class="hover:text-gray-300">NATIONAL</a>
+            <a href="#" class="hover:text-gray-300">INVESTIGATIONS</a>
+          </nav>
+    </div>
+  </div>
+
+  <hr class="border-none h-[1px] bg-[#494E53]"/>
+<!-- seacrh -->
+<div class="w-full pb-[76px] pt-[96px] flex items-center justify-center bg-[#f2f3f4] dark:bg-[#1B2228]">
+  <div class="w-[60%] text-center">
+    <h2 class="text-2xl font-bold text-[#1B2228] font-roboto-serif dark:text-white mb-4">Stay Informed</h2>
+    <p class="text-gray-700 dark:text-gray-400 mb-6">
+      Subscribe to our newsletter for the latest updates.
+    </p>
+    <form class="flex items-center justify-center gap-4">
+      <input
+        type="email"
+        placeholder="Email address"
+        class="bg-white text-gray-900 dark:bg-black dark:text-gray-200 py-3 px-4 rounded-lg w-[60%] focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <button
+        type="submit"
+        class="bg-[#4864C0] hover:bg-blue-700 text-white py-3 px-8 rounded-lg font-medium"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+  <footer class="flex items-center justify-center bg-blue-900 text-white  ">
+    <div class="container  pt-10 pb-[5rem] grid grid-cols-5 gap-6 max-w-[90%]">
+      <!-- Logo Section -->
+      <div>
+        <a href="#">
+          <img src="assets/images/logo.svg" alt="SC Statesman Logo" class="w-32 h-auto">
+        </a>
+      </div>
+      
+      <!-- About Us Section -->
+      <div>
+        <h3 class="text-lg font-bold">About Us</h3>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-gray-300">Our Team</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+          <li><a href="#" class="hover:text-gray-300">Subscribe</a></li>
+          <li><a href="#" class="hover:text-gray-300">Page Link</a></li>
+        </ul>
+      </div>
+      
+      <!-- Resources Section -->
+      <div>
+        <h3 class="text-lg font-bold">Resources</h3>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-gray-300">Advertise</a></li>
+          <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-gray-300">Terms of Service</a></li>
+        </ul>
+      </div>
+      
+      <!-- Follow Us Section -->
+      <div>
+        <h3 class="text-lg font-bold">Follow Us</h3>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-gray-300">Facebook</a></li>
+          <li><a href="#" class="hover:text-gray-300">Twitter</a></li>
+          <li><a href="#" class="hover:text-gray-300">Instagram</a></li>
+          <li><a href="#" class="hover:text-gray-300">LinkedIn</a></li>
+        </ul>
+        
+      </div>
+        <img src="assets/images/Tree.png" alt="SC Statesman Logo" class="absolute h-auto right-[21rem]"/>
+
+      <div class="flex items-start justify-end"> 
+      <div class="flex space-x-4 ">
+        <a href="#">
+            <img src="assets/icons/Fb.svg" alt="SC Statesman Logo" class="w-5 h-auto">
+          </a>
+          <a href="#">
+            <img src="assets/icons/instagram-icon.svg" alt="SC Statesman Logo" class="w-5 h-auto">
+          </a>
+          <a href="#">
+            <img src="assets/icons/twitter-icon.svg" alt="SC Statesman Logo" class="w-5 h-auto">
+          </a>
+    </div>
+</div>
+    </div>
+    
+  </footer>
+
+  <script>
+    // Dark Mode Toggle Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const toggleThumb = document.getElementById('toggle-thumb');
+    const toggleIcon = document.getElementById('toggle-icon');
+
+    // Check initial theme
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      toggleThumb.classList.add('translate-x-4');
+      toggleThumb.classList.remove('translate-x-0');
+      toggleIcon.src = 'assets/icons/night-icon.svg'; // Set to night icon
+    } else {
+      document.documentElement.classList.remove('dark');
+      toggleThumb.classList.add('translate-x-0');
+      toggleThumb.classList.remove('translate-x-4');
+      toggleIcon.src = 'assets/icons/day-icon.svg'; // Set to day icon
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+        toggleThumb.classList.add('translate-x-0');
+        toggleThumb.classList.remove('translate-x-4');
+        toggleIcon.src = 'assets/icons/day-icon.svg'; // Set to day icon
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+        toggleThumb.classList.add('translate-x-4');
+        toggleThumb.classList.remove('translate-x-0');
+        toggleIcon.src = 'assets/icons/night-icon.svg'; // Set to night icon
+      }
+    });
+  </script>
+</body>
+</html>
+
+       
+</root > 
